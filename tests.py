@@ -16,5 +16,5 @@ class FlaskAppTests(unittest.TestCase):
         self.assertEqual(r.status_code, 405)
 
 
-if name == 'main':
+if __name__ == '__main__':
     unittest.main()

@@ -1,5 +1,5 @@
 from flask import Flask
-app = Flask(name)
+app = Flask(__name__)
 
 
 @app.route('/')
@@ -7,5 +7,5 @@ def hello_world():
     return 'У меня получилось!'
 
 
-if name == 'main':
+if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
